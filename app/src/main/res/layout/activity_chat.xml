@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity"
+    >
+
+    <include
+        android:id="@+id/chat_toolbar"
+        layout="@layout/custom_chat_bar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/private_messages_list_of_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/myLinearLayout"
+        android:layout_below="@id/chat_toolbar"
+        />
+
+    <RelativeLayout
+        android:id="@+id/myLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/background_light"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_marginTop="4dp">
+
+
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/chats_input"
+            android:hint="@string/write_a_message_here_hint"
+            android:paddingStart="20dp"
+            android:paddingTop="11.7dp"
+            android:paddingEnd="90dp"
+            android:paddingBottom="11.7dp" />
+
+        <ImageButton
+            android:id="@+id/send_message_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/send_btn_customize"
+            android:paddingStart="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="5dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_send1"
+            />
+        <ImageButton
+            android:id="@+id/send_file_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/send_file_btn_customize"
+            android:layout_toStartOf="@+id/send_message_button"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:src="@drawable/ic_attach_file_black_24dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

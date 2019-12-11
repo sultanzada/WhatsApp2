@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WhatsApp2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email_login">Email</string>
+    <string name="password_login">Password</string>
+    <string name="login_banner">Login banner</string>
+    <string name="login_button">Login</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="need_new_account">need a new account?</string>
+    <string name="or_login_using_your">or Login using your</string>
+    <string name="phone_Button">Mobile number</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="create_account_btn">Create account</string>
+    <string name="find_friends_menu_option">Find friends</string>
+    <string name="setting_menu_option">Setting</string>
+    <string name="sign_out_menu_option">Sign out</string>
+    <string name="update_btn">Update</string>
+    <string name="create_new_group_menu_option">Create new Group</string>
+    <string name="write_a_message_here_hint">type a message</string>
+
+</resources>

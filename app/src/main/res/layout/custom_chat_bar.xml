@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_app_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.YourApp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow"/>
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/custom_profile_image"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_marginStart="4dp"
+          android:src="@drawable/profile_image"
+          android:layout_marginTop="1dp"/>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:paddingStart="8dp">
+          <TextView
+              android:id="@+id/custom_profile_name"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="19sp"
+              android:textColor="@android:color/background_light"
+
+              />
+          <TextView
+              android:id="@+id/custom_user_last_seen"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Last seen"
+              android:gravity="top"
+              android:layout_marginTop="-5dp"
+              android:textColor="@android:color/background_light"
+             />
+
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>
